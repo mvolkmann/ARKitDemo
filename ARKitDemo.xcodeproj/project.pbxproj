@@ -11,6 +11,12 @@
 		1A0D13FC2982EB040087474E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D13FB2982EB040087474E /* ContentView.swift */; };
 		1A0D13FE2982EB050087474E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D13FD2982EB050087474E /* Assets.xcassets */; };
 		1A0D14012982EB050087474E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D14002982EB050087474E /* Preview Assets.xcassets */; };
+		1A0D140B2982EC4E0087474E /* MyARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D14072982EC4E0087474E /* MyARView.swift */; };
+		1A0D140C2982EC4E0087474E /* ARManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D14082982EC4E0087474E /* ARManager.swift */; };
+		1A0D140D2982EC4E0087474E /* MyARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D14092982EC4E0087474E /* MyARViewRepresentable.swift */; };
+		1A0D140E2982EC4E0087474E /* ARAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D140A2982EC4E0087474E /* ARAction.swift */; };
+		1A0D14102982ECF10087474E /* Skateboard.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D140F2982ECF10087474E /* Skateboard.rcproject */; };
+		1A0D1412298330E40087474E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D1411298330E40087474E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		1A0D13FB2982EB040087474E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A0D13FD2982EB050087474E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A0D14002982EB050087474E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A0D14072982EC4E0087474E /* MyARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyARView.swift; sourceTree = "<group>"; };
+		1A0D14082982EC4E0087474E /* ARManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARManager.swift; sourceTree = "<group>"; };
+		1A0D14092982EC4E0087474E /* MyARViewRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyARViewRepresentable.swift; sourceTree = "<group>"; };
+		1A0D140A2982EC4E0087474E /* ARAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAction.swift; sourceTree = "<group>"; };
+		1A0D140F2982ECF10087474E /* Skateboard.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Skateboard.rcproject; sourceTree = "<group>"; };
+		1A0D1411298330E40087474E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,7 @@
 		1A0D13ED2982EB040087474E = {
 			isa = PBXGroup;
 			children = (
+				1A0D1411298330E40087474E /* README.md */,
 				1A0D13F82982EB040087474E /* ARKitDemo */,
 				1A0D13F72982EB040087474E /* Products */,
 			);
@@ -53,6 +66,11 @@
 			children = (
 				1A0D13F92982EB040087474E /* ARKitDemoApp.swift */,
 				1A0D13FB2982EB040087474E /* ContentView.swift */,
+				1A0D140A2982EC4E0087474E /* ARAction.swift */,
+				1A0D14082982EC4E0087474E /* ARManager.swift */,
+				1A0D14072982EC4E0087474E /* MyARView.swift */,
+				1A0D14092982EC4E0087474E /* MyARViewRepresentable.swift */,
+				1A0D140F2982ECF10087474E /* Skateboard.rcproject */,
 				1A0D13FD2982EB050087474E /* Assets.xcassets */,
 				1A0D13FF2982EB050087474E /* Preview Content */,
 			);
@@ -125,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A0D1412298330E40087474E /* README.md in Resources */,
 				1A0D14012982EB050087474E /* Preview Assets.xcassets in Resources */,
 				1A0D13FE2982EB050087474E /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A0D14102982ECF10087474E /* Skateboard.rcproject in Sources */,
+				1A0D140C2982EC4E0087474E /* ARManager.swift in Sources */,
 				1A0D13FC2982EB040087474E /* ContentView.swift in Sources */,
+				1A0D140E2982EC4E0087474E /* ARAction.swift in Sources */,
+				1A0D140B2982EC4E0087474E /* MyARView.swift in Sources */,
+				1A0D140D2982EC4E0087474E /* MyARViewRepresentable.swift in Sources */,
 				1A0D13FA2982EB040087474E /* ARKitDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +294,7 @@
 				DEVELOPMENT_TEAM = 4BG3523GAZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need for augmented reality view";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +324,7 @@
 				DEVELOPMENT_TEAM = 4BG3523GAZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need for augmented reality view";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

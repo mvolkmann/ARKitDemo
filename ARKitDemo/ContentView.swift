@@ -1,21 +1,59 @@
-//
-//  ContentView.swift
-//  ARKitDemo
-//
-//  Created by Mark Volkmann on 1/26/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+    @State private var colors: [Color] = [.red, .green, .blue]
+    private var stream = ARManager.shared.actionStream
+
+    struct MyButtonStyle: ViewModifier {
+        func body(content: Content) -> some View {
+            content
+                .frame(width: 40, height: 40)
+                .padding()
+                .background(.regularMaterial) // provides a blur effect
+                .cornerRadius(16)
         }
-        .padding()
+    }
+
+    var buttonRow: some View {
+        ScrollView(.horizontal) {
+            HStack {
+                Button("Place") {
+                    stream.send(.placeSkateboard)
+                }
+                .modifier(MyButtonStyle())
+
+                Button("360") {
+                    stream.send(.playSkateboardAnimation)
+                }
+                .modifier(MyButtonStyle())
+
+                Button {
+                    stream.send(.removeAllAnchors)
+                } label: {
+                    Image(systemName: "trash")
+                        .resizable()
+                        .scaledToFit()
+                        .modifier(MyButtonStyle())
+                }
+
+                ForEach(colors, id: \.self) { color in
+                    Button {
+                        stream.send(.placeBlock(color: color))
+                    } label: {
+                        color.modifier(MyButtonStyle())
+                    }
+                }
+            }
+            .padding()
+        }
+    }
+
+    var body: some View {
+        MyARViewRepresentable()
+            .ignoresSafeArea() // so it can fill the entire screen
+            .overlay(alignment: .bottom) {
+                buttonRow
+            }
     }
 }
 
