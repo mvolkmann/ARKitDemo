@@ -23,7 +23,7 @@ class MyARView: ARView {
     }
 
     private var cancellables: Set<AnyCancellable> = []
-    private var skateboard: Skateboard.Scene?
+    private var football: MyFirst.Scene?
 
     func anchorExamples() {
         // Attach anchors at specific coordinates in the iPhone-centered coordinate system
@@ -89,11 +89,12 @@ class MyARView: ARView {
         scene.addAnchor(anchor)
     }
 
-    func placeSkateboard() {
+    func placeFootball() {
         do {
-            let skateboard = try Skateboard.loadScene()
-            scene.addAnchor(skateboard)
-            self.skateboard = skateboard
+            // TODO: Can you load a single shape instead of the entire scene?
+            let football = try MyFirst.loadScene()
+            scene.addAnchor(football)
+            self.football = football
         } catch {
             print("MyARView.placeSkateboard:", error)
         }
@@ -108,11 +109,13 @@ class MyARView: ARView {
             case let .placeBlock(color):
                 self?.placeBlock(ofColor: color)
 
-            case .placeSkateboard:
-                self?.placeSkateboard()
+            case .placeFootball:
+                self?.placeFootball()
 
-            case .playSkateboardAnimation:
-                self?.skateboard?.notifications.mySkateboardTrick.post()
+            case .playFootballAnimation:
+                // kickFootball is the only "Notification" behavior.
+                // moveFootball and jiggleFootball use other notification types.
+                self?.football?.notifications.kickFootball.post()
 
             case .removeAllAnchors:
                 self?.scene.anchors.removeAll()

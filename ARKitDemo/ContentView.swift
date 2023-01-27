@@ -18,12 +18,12 @@ struct ContentView: View {
         ScrollView(.horizontal) {
             HStack {
                 Button("Place") {
-                    stream.send(.placeSkateboard)
+                    stream.send(.placeFootball)
                 }
                 .modifier(MyButtonStyle())
 
-                Button("360") {
-                    stream.send(.playSkateboardAnimation)
+                Button("Kick") {
+                    stream.send(.playFootballAnimation)
                 }
                 .modifier(MyButtonStyle())
 

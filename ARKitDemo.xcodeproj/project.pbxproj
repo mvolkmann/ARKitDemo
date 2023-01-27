@@ -15,8 +15,8 @@
 		1A0D140C2982EC4E0087474E /* ARManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D14082982EC4E0087474E /* ARManager.swift */; };
 		1A0D140D2982EC4E0087474E /* MyARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D14092982EC4E0087474E /* MyARViewRepresentable.swift */; };
 		1A0D140E2982EC4E0087474E /* ARAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D140A2982EC4E0087474E /* ARAction.swift */; };
-		1A0D14102982ECF10087474E /* Skateboard.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D140F2982ECF10087474E /* Skateboard.rcproject */; };
 		1A0D1412298330E40087474E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D1411298330E40087474E /* README.md */; };
+		1A0D1414298363DA0087474E /* MyFirst.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D1413298363DA0087474E /* MyFirst.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +29,8 @@
 		1A0D14082982EC4E0087474E /* ARManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARManager.swift; sourceTree = "<group>"; };
 		1A0D14092982EC4E0087474E /* MyARViewRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyARViewRepresentable.swift; sourceTree = "<group>"; };
 		1A0D140A2982EC4E0087474E /* ARAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAction.swift; sourceTree = "<group>"; };
-		1A0D140F2982ECF10087474E /* Skateboard.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Skateboard.rcproject; sourceTree = "<group>"; };
 		1A0D1411298330E40087474E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1A0D1413298363DA0087474E /* MyFirst.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = MyFirst.rcproject; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/Reality Composer/MyFirst.rcproject"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 				1A0D14082982EC4E0087474E /* ARManager.swift */,
 				1A0D14072982EC4E0087474E /* MyARView.swift */,
 				1A0D14092982EC4E0087474E /* MyARViewRepresentable.swift */,
-				1A0D140F2982ECF10087474E /* Skateboard.rcproject */,
+				1A0D1413298363DA0087474E /* MyFirst.rcproject */,
 				1A0D13FD2982EB050087474E /* Assets.xcassets */,
 				1A0D13FF2982EB050087474E /* Preview Content */,
 			);
@@ -156,11 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0D14102982ECF10087474E /* Skateboard.rcproject in Sources */,
 				1A0D140C2982EC4E0087474E /* ARManager.swift in Sources */,
 				1A0D13FC2982EB040087474E /* ContentView.swift in Sources */,
 				1A0D140E2982EC4E0087474E /* ARAction.swift in Sources */,
 				1A0D140B2982EC4E0087474E /* MyARView.swift in Sources */,
+				1A0D1414298363DA0087474E /* MyFirst.rcproject in Sources */,
 				1A0D140D2982EC4E0087474E /* MyARViewRepresentable.swift in Sources */,
 				1A0D13FA2982EB040087474E /* ARKitDemoApp.swift in Sources */,
 			);
